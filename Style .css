@@ -1,0 +1,264 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:rgb(114, 173, 236);
+    cursor: url('Myfiles/cursorpng.png') 0 0, auto;
+}
+
+button,
+a,
+summary{
+    cursor: url('Myfiles/cursorpng.png') 0 0, pointer;
+}
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color:brown
+}
+
+h1{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h2{
+    font-family: 'Lucida Handwriting', 'Cursive', sans-serif;
+    font-size: 24px;
+    color: rgb(83, 112, 239);
+}
+
+.btn{
+    display: inline-block;
+    min-width: 90px;
+    padding: 30px 24px;
+    background-color: #f8e7a1;
+    color: #66551b;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    clip-path: polygon(50% 4%, 61% 34%, 94% 36%, 68% 57%, 77% 88%, 50% 70%, 23% 88%, 32% 57%, 6% 36%, 39% 34%);
+
+}
+
+.btn:hover{
+    background:#f3d875;
+    transform: scale(120%);
+}
+img{
+    /* width: 100%; */
+    
+    width: 500px;
+}
+
+img:hover{
+    transform: scale(1.5)
+    transition: transform 0.9s ease; 
+}
+
+body{
+background-image: url(img/Background.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+nav a{
+    margin:30;
+
+}
+
+nav a{
+    margin-right: 10; 
+}
+
+p{
+    margin: 30; 
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.image-grid img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow;0 4px 12px rgba(0,0,0,0.2);
+}
+
+.image-grid img:hover{
+    transform: scale(1.05);
+    transition:0.3s;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.876);
+    border-radius: 10px;
+}
+
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-content img{
+    display: block;
+    width: min(450px, 100%);
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about-text p{
+    margin: 0 0 20px;
+}
+
+.about-text{
+    flex: 1 1 300px;
+    min-width: 0;
+    font-size: 35px;
+}
+
+@media (max-width: 700px){
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+
+h1{ text-align: center;}
+
+h1{
+    width:fit-content; 
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 70px;
+}
+
+nav{
+    text-align: center;
+    margin:0 auto;
+}
+
+.work-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.work-menu summary{
+    list-style: none;
+}
+
+.work-menu summary::-webkit-details-marker{
+    display: none;
+}
+
+.work-menu-links{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 360px;
+    transform: translateX(-50%);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;      
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;  
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.image-grid .item {
+  min-width: 0;
+}
+
+.image-grid .explanation[hidden] {
+  display: none;
+}
+
+.image-grid .item.active .explanation {
+  display: block;
+}
+
+.image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.image-button:focus-visible {
+  outline: 4px solid rgb(83, 112, 239);
+  outline-offset: 4px;
+}
+
+.image-grid .item.active .image-button img {
+  box-shadow: 0 0 0 5px rgb(83, 112, 239);
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.image-grid .explanation {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.image-grid .explanation h3 {
+  font-size: 24px;
+  margin: 15px 0 8px;
+}
+
+.image-grid .explanation p {
+  margin: 0;
+}
+
+.image-grid .item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
